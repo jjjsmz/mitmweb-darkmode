@@ -3,15 +3,16 @@
 from mitmproxy.tools.web import app
 
 STYLE = b"""<style>
-html { background: #fff; filter: invert(1) hue-rotate(180deg) url(#soft-dark); }
+html { background: #22272e; }
+body { background: #fff; filter: invert(1) hue-rotate(180deg) url(#soft-dark); }
 img, video { filter: invert(1) hue-rotate(180deg); }
 </style>"""
 
 SVG = b"""<svg width="0" height="0" style="position:absolute">
 <filter id="soft-dark" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="
-0.545 0 0 0 0.133
-0 0.576 0 0 0.153
-0 0 0.600 0 0.180
+0.671 0 0 0 0.133
+0 0.698 0 0 0.153
+0 0 0.718 0 0.180
 0 0 0 1 0"/></filter></svg>"""
 
 
